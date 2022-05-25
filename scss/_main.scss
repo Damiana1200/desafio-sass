@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $color-principal;
+}
+#logo{
+  display: inline-flex;
+  align-self: center;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+} 
+.indexcontenedor{
+  background-color: $fondo-principal;
+  height: 100%;
+  #carouselExampleDark{
+      color: $color-principal;
+      display: inline-block;
+      align-items: center;
+      justify-self: center;
+      width: 50%;
+      height: 50px;
+      margin: 50px 25%;
+  }
+}
+
+.carousel h5{
+  color: $color-principal;
+   &::before{
+    content:'--';
+  }
+}
+.tarjetas {
+      h5, p{
+        color: $color-secundario;
+      }
+      .card{
+        margin:  50px;
+        width: 30%;
+      }
+      &:hover{
+      transform: scale(1.1);
+      }
+}
+
+#footer{
+  background-image: $fondo-principal;
+  color: $color-secundario;
+}
